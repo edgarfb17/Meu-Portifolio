@@ -1,0 +1,230 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin: 0;
+}
+
+h2{
+    font-size: 4.0em;
+    font-family: Montserrat-Variable;
+    margin: 0;
+    width: 100%;
+    color: azure;
+}
+
+@font-face{
+    font-family: Roboto-mono;
+    src: url("assets/Fonts/RobotoMono-VariableFont_wght.ttf");
+}
+
+@font-face{
+    font-family: Montserrat-Variable;
+    src: url("assets/Fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face{
+    font-family: Bungee-inline;
+    src: url("assets/Fonts/BungeeInline-Regular.ttf");
+}
+
+.alinhamento-conteudo{
+    max-width: 1224px;
+    margin: 0 6% 0 10%;
+}
+
+
+/* topo */
+
+#topo{
+    background-color: rgb(38, 38, 53);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    border-bottom: 2px solid rgb(93, 93, 206);
+}
+
+#topo nav{
+    width: 700px;
+    min-width: 550px;
+}
+
+#topo ul{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#topo li{
+    font-size: 1.8em;
+    font-family: Roboto-mono;
+    list-style: none;
+}
+
+#topo a{
+    text-decoration: none;
+    color: rgb(158, 158, 212);
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+
+#topo a:hover{
+    background-color: azure;
+    border-radius: 18px;
+}
+
+/* topo */
+
+/* apresentacao */
+
+#apresentacao{
+    background-image: url("assets/background-design-6tgpche84avnjqvz.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#titulo-apresentacao{
+    margin-left: 10%;
+    line-height: 60px;
+}    
+
+#titulo-apresentacao h1{
+    font-size: 7.0em;
+    margin: 0;
+    font-family: Bungee-inline;
+}
+
+#titulo-apresentacao span{
+    font-size: 4.0rem;
+    font-family: Roboto-mono;
+}
+
+/* apresentacao */
+
+/* sobre */
+
+#sobre{
+    background-color: rgb(38, 38, 53);
+    max-height: 500px;
+}
+
+#sobre-box{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+
+#sobre-txt{
+    width: 50%;
+    height: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0;
+    color: white;
+    font-family: Roboto-mono;
+    font-size: 1.9em;
+}
+
+#sobre-img{
+    width: 50%;
+    height: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#sobre-box h2{
+    height: 20%;
+}
+
+/* sobre */
+
+/* projetos */
+
+#projetos{
+    background-color: #dd617d;
+    margin: 0;
+    height: 170vh;
+}
+
+#projetos h2{
+    padding: 50px 0 ;
+}
+
+.projeto{
+    background-color: #d5c17f;
+    border-radius: 12px;
+}
+
+#titulo-projeto h3{
+    color: rgb(38, 38, 53);
+    font-family: Montserrat-Variable;
+    font-size: 2.5em;
+    height: 7%;
+    justify-self: center;
+    display: flex;
+}
+
+.projeto p{
+    font-size: 1.5em;
+    font-family: Roboto-mono;
+    text-align: center;
+    padding: 20px;
+    border-top: rgb(38, 38, 53) solid 2px;
+    height: 27%;
+}
+
+#titulo-projeto a:nth-child(2){
+    font-size: 1.5em;
+    font-family: Roboto-mono;
+    text-align: end;
+    padding-right: 20px ;
+    height: 7%;
+    margin: 25px 0;
+    justify-self: end;
+    display: flex;
+}
+
+#titulo-projeto{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    border-bottom: rgb(38, 38, 53) solid 2px;
+}
+
+/* grid */
+
+#projeto-grid{
+    height: 80%;
+    width: 100%;
+    padding: 50px 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 100px;
+}
+
+/* grid */
+
+/* media querys */
+
+@media (max-width:1366px){
+    #sobre-txt{
+        width: 65%;
+    }
+
+    #sobre-img{
+        width: 35%;
+    }
+}
