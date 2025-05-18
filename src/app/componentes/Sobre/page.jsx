@@ -1,0 +1,24 @@
+import styles from "./sobre.module.css"
+import Image from "next/image"
+
+export default function Sobre(){
+    return(
+        <div>
+           <div>
+            <h2>Sobre</h2>
+            <p> 
+                Olá me chamo Edgar e tenho 22 Anos, pretendo entrar
+                na área de Desenvolvimento Web pois gosto muito de
+                computadores e resolver problemas, quero cursar mais
+                cursos para me especializar melhor. Estou procurando
+                qualquer serviço nessa área para aumentar meu
+                conhecimento e experiência. Estou cursando atualmente
+                faculdade de Análise e Desenvolvimento de Sistemas, e
+                tenho ampliado bastante meu conhecimento em front-end
+                com cursos, planos de estudo e projetos pessoais. 
+            </p>
+            <Image></Image>
+           </div>
+        </div>
+    )
+}
