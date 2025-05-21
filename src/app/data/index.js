@@ -4,7 +4,7 @@ export const listaProjetos = [
     {
         titulo: "Barbearia Barba Russa",
         gif: BarbaRussa,
-        categoria: ["html", "css", "js"],
+        categoria: "html/css",
         descricao: "Projeto Freelancer Elaborado para a divulgação da barbearia Barba Russa"
     },
 
@@ -25,7 +25,7 @@ export const listaProjetos = [
     {
         titulo: "Barbearia Barba Russa",
         gif: BarbaRussa,
-        categoria: ["html", "css"],
+        categoria: "html/css",
         descricao: "Projeto Freelancer Elaborado para a divulgação da barbearia Barba Russa"
     }
 ]

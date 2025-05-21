@@ -1,5 +1,7 @@
-import listaProdutos from "../data/index"
+import {listaProjetos} from "../data/index"
 
 export const filtrarCategoria = (categoria) => {
-    return listaProdutos.filter((projeto) => projeto.categoria === categoria) 
+    return listaProjetos.filter((projeto) => projeto.categoria === categoria) 
 }
+
+export const projetosInicio = filtrarCategoria("html/css")
