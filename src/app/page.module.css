@@ -1,0 +1,56 @@
+#page{
+    width: 100%;
+}
+
+#header{
+    width: 100%;
+}
+
+#menu_header{
+    width: 100%;
+    height: 8vh;
+    background-color:#1f6384;
+    border-bottom: 1px solid white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu_header ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+#menu_header ul li{
+    flex-grow: 1;
+}
+
+#menu_header ul li:first-child{
+    list-style: none;
+}
+
+#banner_box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+#banner_box img{
+    width: 100%;
+    height: 100%;
+}
+
+#banner_txt{
+    position: absolute;
+    text-align: start;
+    width: 100%;
+}
+
+#banner_txt *{
+    width: 100%;
+}
+

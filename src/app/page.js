@@ -20,8 +20,8 @@ export default function Home() {
   }
 
   return(
-    <div className={styles.page}>
-      <header className={styles.header}>
+    <div id={styles.page}>
+      <header id={styles.header}>
         <nav id={styles.menu_header}>
             <ul>
                 <li>Sobre</li>
@@ -32,9 +32,11 @@ export default function Home() {
         </nav>
         
         <div id={styles.banner_box}>
+          <div className="alinhamento-conteudo" id={styles.banner_txt}>
             <h1>Edgar Fernandes</h1>
             <h2>Desenvolvedor Web</h2>
-            <Image src={Banner} alt="imagem banner"></Image>
+          </div>
+          <Image src={Banner} alt="imagem banner"></Image>
         </div>
       </header>
       <main className={styles.main}>

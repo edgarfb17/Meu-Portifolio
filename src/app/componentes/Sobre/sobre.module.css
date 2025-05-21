@@ -1,0 +1,13 @@
+#section_sobre{
+    background-color: #2bc2ec;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 50px
+}
+
+#container_txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

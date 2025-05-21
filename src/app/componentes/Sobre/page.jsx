@@ -4,7 +4,7 @@ import Image from "next/image"
 export default function Sobre(){
     return(
         <div id={styles.section_sobre}>
-           <div id={styles.container_sobre}>
+           <div id={styles.container_txt}>
                 <h2>Sobre</h2>
                 <p> 
                     Olá me chamo Edgar e tenho 23 Anos, pretendo entrar
