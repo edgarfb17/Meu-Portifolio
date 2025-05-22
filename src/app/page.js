@@ -8,6 +8,7 @@ import styles from "./page.module.css";
 import Banner from "../../public/Banner.jpg"
 import Git from "../../public/githubIcon.svg"
 import Wpp from "../../public/whatsappIcon.svg"
+import Email from "../../public/emailIcon.svg"
 import Linkedin from "../../public/linkedinIcon.svg"
 import Sobre from "./componentes/Sobre/page"
 import Cards from "./componentes/Cards/page"
@@ -32,7 +33,7 @@ export default function Home() {
         <nav id={styles.menu_header}>
             <ul>
                 <li>Sobre</li>
-                <li>Habilidades</li>
+                <li>Skills</li>
                 <li>Projetos</li>
                 <li>Contato</li>
             </ul>
@@ -73,19 +74,31 @@ export default function Home() {
        
       </main>
 
-      <footer className={styles.footer}>
-         <div id={styles.container_formulario}>
-            <h2 className="alinhamento-conteudo">Contato</h2>
+      <footer id={styles.footer}>
+        <div className="alinhamento-conteudo" id={styles.container_contato}>
+          <h2>Contato</h2>
 
-            <div id={styles.cel}>
-              <Image src={Wpp} alt="icone whatsapp"></Image>
-              <p>(15)988231195</p>
-            </div>
+          <div id={styles.links}>
+            <Link href="#">
+            <Image src={Wpp} alt="icone whatsapp"></Image>
+            (15)988231195
+            </Link>
 
-            <div id={styles.links}>
-                <Link href="https://github.com/edgarfb17"><Image src={Git} alt="icone github"></Image></Link>
-                <Link href="https://www.linkedin.com/in/edgarfb/"><Image src={Linkedin} alt="icone linkedin"></Image></Link>
-            </div>
+            <Link href="https://github.com/edgarfb17">
+            <Image src={Git} alt="icone github"></Image>
+            www.github.com/edgarfb17
+            </Link>
+
+            <Link href="https://www.linkedin.com/in/edgarfb/">
+            <Image src={Linkedin} alt="icone linkedin"></Image>
+            www.linkedin.com/in/edgarfb/
+            </Link>
+
+            <Link href="mailto:edgarfb@outlook.com.br">
+            <Image src={Email} alt="icone email"></Image>
+            edgarfb@outlook.com.br
+            </Link>
+          </div>
 
         </div>
 

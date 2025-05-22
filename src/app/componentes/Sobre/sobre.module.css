@@ -1,9 +1,21 @@
 #section_sobre{
     background-color: #2bc2ec;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 30px;
     gap: 50px
+}
+
+#section_sobre img{
+    height: 350px;
+    width: 250px;
+    border-radius: 30px;
+    border: 2px solid #1f6384;
+}
+
+#container_sobre{
+    display: flex;
+    gap: 30px;
 }
 
 #container_txt{
@@ -12,11 +24,4 @@
     gap: 30px;
     border-left: 2px solid #1f6384;
     padding-left: 40px;
-}
-
-#section_sobre img{
-    height: 350px;
-    width: 250px;
-    border-radius: 30px;
-    border: 2px solid #1f6384;
 }
