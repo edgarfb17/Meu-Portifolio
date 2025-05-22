@@ -9,5 +9,14 @@
 #container_txt{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 30px;
+    border-left: 2px solid #1f6384;
+    padding-left: 40px;
+}
+
+#section_sobre img{
+    height: 350px;
+    width: 250px;
+    border-radius: 30px;
+    border: 2px solid #1f6384;
 }

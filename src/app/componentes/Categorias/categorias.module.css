@@ -1,0 +1,15 @@
+#container_categorias{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+#container_categorias button{
+    padding: 8px;
+    border-radius: 18px;
+    background-color: #bacfa6;
+    border: 1px solid rgb(184, 181, 181);
+    box-shadow: 2px 1px 1px;
+}

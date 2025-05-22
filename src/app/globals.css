@@ -8,5 +8,10 @@
 
 .alinhamento-conteudo{
   max-width: 1024px;
+  margin: 0 2%;
+}
+
+h2{
+  color: #bacfa6;
 }
 

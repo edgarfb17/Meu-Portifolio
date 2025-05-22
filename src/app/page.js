@@ -1,13 +1,18 @@
 'use client'
 import { useState } from "react";
 import { projetosInicio } from "./servico/index"
+import { filtrarCategoria } from "./servico";
+import Link from "next/link"
 import Image from "next/image";
 import styles from "./page.module.css";
 import Banner from "../../public/Banner.jpg"
+import Git from "../../public/githubIcon.svg"
+import Wpp from "../../public/whatsappIcon.svg"
+import Linkedin from "../../public/linkedinIcon.svg"
 import Sobre from "./componentes/Sobre/page"
 import Cards from "./componentes/Cards/page"
 import Categorias from "./componentes/Categorias/page";
-import { filtrarCategoria } from "./servico";
+import Skills from "./componentes/Skills/page"
 
 export default function Home() {
 
@@ -21,7 +26,9 @@ export default function Home() {
 
   return(
     <div id={styles.page}>
+
       <header id={styles.header}>
+
         <nav id={styles.menu_header}>
             <ul>
                 <li>Sobre</li>
@@ -32,31 +39,59 @@ export default function Home() {
         </nav>
         
         <div id={styles.banner_box}>
+
           <div className="alinhamento-conteudo" id={styles.banner_txt}>
             <h1>Edgar Fernandes</h1>
             <h2>Desenvolvedor Web</h2>
           </div>
+
           <Image src={Banner} alt="imagem banner"></Image>
         </div>
+
       </header>
+
       <main className={styles.main}>
         <Sobre />
-        <div id={styles.projetos_container}>
-          <h2>Projetos</h2>
+
+        <div id={styles.section_projetos}>
+
+          <h2 className="alinhamento-conteudo">Projetos</h2>
           <Categorias 
           changeFilter={changeFilter}
           buttonClick={buttonClick}
           />
-            <div id={styles.projetos_cards}>
+
+            <div className="alinhamento-conteudo" id={styles.projetos_cards}>
               {projetosFiltrados.map((projeto, index) => 
                 <Cards key={index} titulo={projeto.titulo} gif={projeto.gif} descricao={projeto.descricao}/>
                 )}  
             </div>
+
         </div>
+
+        <Skills />
        
       </main>
+
       <footer className={styles.footer}>
-       
+         <div id={styles.container_formulario}>
+            <h2 className="alinhamento-conteudo">Contato</h2>
+
+            <div id={styles.cel}>
+              <Image src={Wpp} alt="icone whatsapp"></Image>
+              <p>(15)988231195</p>
+            </div>
+
+            <div id={styles.links}>
+                <Link href="https://github.com/edgarfb17"><Image src={Git} alt="icone github"></Image></Link>
+                <Link href="https://www.linkedin.com/in/edgarfb/"><Image src={Linkedin} alt="icone linkedin"></Image></Link>
+            </div>
+
+        </div>
+
+        <div className="alinhamento-conteudo" id={styles.rodape}>
+            <p>&copy;2025 Meu portifólio | Desenvolvedor Edgar F.B.</p>
+        </div>
       </footer>
     </div>
   );

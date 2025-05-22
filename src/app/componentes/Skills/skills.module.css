@@ -1,0 +1,24 @@
+#section_skills{
+    background-color: #7bd0b5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 30px 0;
+}
+
+#container_skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+#container_skills p{
+    flex-grow: 1;
+    padding: 8px;
+    background-color: #d1abe7;
+    border-radius: 15px;
+}

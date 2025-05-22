@@ -1,0 +1,20 @@
+#container_card{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color:burlywood;
+    padding: 25px 15px;
+    flex-grow: 1;
+    max-width: 600px;
+}
+
+#container_card img{
+    width: 100%;
+    max-width: 500px;
+    height: 220px;
+}

@@ -1,5 +1,6 @@
 import styles from "./sobre.module.css"
 import Image from "next/image"
+import Perfil from "../../../../public/Perfil.jpeg"
 
 export default function Sobre(){
     return(
@@ -18,7 +19,7 @@ export default function Sobre(){
                     com cursos, planos de estudo e projetos pessoais. 
                 </p>
             </div>
-            
+            <Image src={Perfil}></Image>
         </div>
     )
 }
