@@ -25,6 +25,7 @@
 
 #menu_header ul li{
     flex-grow: 1;
+    padding-left: 20px;
 }
 
 #menu_header ul li:first-child{
@@ -47,12 +48,17 @@
 
 #banner_txt{
     position: absolute;
-    text-align: start;
     width: 100%;
+    left: 30px;
 }
 
 #banner_txt *{
     width: 100%;
+}
+
+#banner_txt h2{
+    font-family: "Roboto Mono", sans-serif;
+    color: black;
 }
 
 #section_projetos{
@@ -110,7 +116,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
+}
+
+#links a{
+    flex-grow: 1;
+    width: 150px;
 }
 
 #rodape{
