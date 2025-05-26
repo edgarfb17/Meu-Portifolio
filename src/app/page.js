@@ -32,10 +32,10 @@ export default function Home() {
 
         <nav id={styles.menu_header}>
             <ul>
-                <li>Sobre</li>
-                <li>Skills</li>
-                <li>Projetos</li>
-                <li>Contato</li>
+              <li><Link href={Sobre.section_sobre}>Sobre</Link></li>
+              <li><Link href={styles.section_projetos}>Projetos</Link></li>
+              <li><Link href={Skills.section_skills}>Skills</Link></li>
+              <li><Link href={styles.footer}>Contato</Link></li>
             </ul>
         </nav>
         
