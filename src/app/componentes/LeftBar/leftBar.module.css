@@ -1,0 +1,57 @@
+#container_left_bar{
+    position: fixed;
+    top: 25%;
+    left: 0;
+    height: 170px;
+    width: 65px;
+    display: flex;
+    flex-direction: column;
+}
+
+#container_left_bar a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container_left_bar a img{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#link_wpp{
+    background-color: #128c7e;
+}
+
+#link_git{
+    background-color: #5f6a75;
+}
+
+#link_linkedin{
+    background-color: #e9f0f3;
+}
+
+#link_email{
+    background-color: blanchedalmond;
+}
+
+
+#link_wpp:hover{
+    background-color: #14b8a4;
+}
+
+#link_git:hover{
+    background-color: #dbdddf;
+}
+
+#link_linkedin:hover{
+    background-color: #abddf3;
+}
+
+#link_email:hover{
+    background-color: rgb(241, 203, 144);
+}

@@ -14,6 +14,9 @@ import Sobre from "./componentes/Sobre/page"
 import Cards from "./componentes/Cards/page"
 import Categorias from "./componentes/Categorias/page";
 import Skills from "./componentes/Skills/page"
+import LeftBar from "./componentes/LeftBar/page";
+import MenuTopo from "./componentes/MenuTopo/page"
+import Contato from "./componentes/Contato/page"
 
 export default function Home() {
 
@@ -30,14 +33,7 @@ export default function Home() {
 
       <header id={styles.header}>
 
-        <nav id={styles.menu_header}>
-            <ul>
-              <li><Link href="#">Sobre</Link></li>
-              <li><Link href="#">Projetos</Link></li>
-              <li><Link href="#">Skills</Link></li>
-              <li><Link href="#">Contato</Link></li>
-            </ul>
-        </nav>
+        <MenuTopo />
         
         <div id={styles.banner_box}>
 
@@ -48,6 +44,13 @@ export default function Home() {
 
           <Image src={Banner} alt="imagem banner"></Image>
         </div>
+
+        <LeftBar 
+        git={Git}
+        wpp={Wpp}
+        linkedin={Linkedin}
+        email={Email}
+        />
 
       </header>
 
@@ -62,11 +65,11 @@ export default function Home() {
           buttonClick={buttonClick}
           />
 
-            <div className="alinhamento-conteudo" id={styles.projetos_cards}>
-              {projetosFiltrados.map((projeto, index) => 
-                <Cards key={index} titulo={projeto.titulo} gif={projeto.gif} descricao={projeto.descricao}/>
-                )}  
-            </div>
+          <div className="alinhamento-conteudo" id={styles.projetos_cards}>
+            {projetosFiltrados.map((projeto, index) => 
+              <Cards key={index} titulo={projeto.titulo} gif={projeto.gif} descricao={projeto.descricao}/>
+              )}  
+          </div>
 
         </div>
 
@@ -75,32 +78,13 @@ export default function Home() {
       </main>
 
       <footer id={styles.footer}>
-        <div className="alinhamento-conteudo" id={styles.container_contato}>
-          <h2>Contato</h2>
-
-          <div id={styles.links}>
-            <Link href="#">
-            <Image src={Wpp} alt="icone whatsapp"></Image>
-            (15)988231195
-            </Link>
-
-            <Link href="https://github.com/edgarfb17">
-            <Image src={Git} alt="icone github"></Image>
-            www.github.com/edgarfb17
-            </Link>
-
-            <Link href="https://www.linkedin.com/in/edgarfb/">
-            <Image src={Linkedin} alt="icone linkedin"></Image>
-            www.linkedin.com/in/edgarfb/
-            </Link>
-
-            <Link href="mailto:edgarfb@outlook.com.br">
-            <Image src={Email} alt="icone email"></Image>
-            edgarfb@outlook.com.br
-            </Link>
-          </div>
-
-        </div>
+        
+      <Contato 
+        git={Git}
+        wpp={Wpp}
+        linkedin={Linkedin}
+        email={Email}
+        />
 
         <div className="alinhamento-conteudo" id={styles.rodape}>
             <p>&copy;2025 Meu portifólio | Desenvolvedor Edgar F.B.</p>
