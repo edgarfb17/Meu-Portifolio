@@ -2,6 +2,11 @@
 import { useState } from "react";
 import { projetosInicio } from "./servico/index"
 import { filtrarCategoria } from "./servico";
+/*import { DiCode } from "react-icons/di";
+import { DiIonic } from "react-icons/di";
+import { DiAtom } from "react-icons/di";
+import { AiOutlineDeploymentUnit } from "react-icons/ai";
+import { AiOutlineCode } from "react-icons/ai";*/
 import Link from "next/link"
 import Image from "next/image";
 import styles from "./page.module.css";

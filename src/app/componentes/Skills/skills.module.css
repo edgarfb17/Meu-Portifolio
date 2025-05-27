@@ -21,4 +21,11 @@
     padding: 8px;
     background-color: #d1abe7;
     border-radius: 15px;
+    box-shadow: 1px 1px 1px black;
+}
+
+#container_skills p:hover{
+    transform: scale(1.15);
+    transition: 0.5s;
+    cursor: default;
 }
