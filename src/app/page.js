@@ -2,12 +2,9 @@
 import { useState } from "react";
 import { projetosInicio } from "./servico/index"
 import { filtrarCategoria } from "./servico";
-/*import { DiCode } from "react-icons/di";
-import { DiIonic } from "react-icons/di";
 import { DiAtom } from "react-icons/di";
 import { AiOutlineDeploymentUnit } from "react-icons/ai";
-import { AiOutlineCode } from "react-icons/ai";*/
-import Link from "next/link"
+import { AiOutlineCode } from "react-icons/ai";
 import Image from "next/image";
 import styles from "./page.module.css";
 import Banner from "../../public/Banner.jpg"
@@ -19,6 +16,9 @@ import Sobre from "./componentes/Sobre/page"
 import Cards from "./componentes/Cards/page"
 import Categorias from "./componentes/Categorias/page";
 import Skills from "./componentes/Skills/page"
+import LeftBar from "./componentes/LeftBar/page";
+import MenuTopo from "./componentes/MenuTopo/page"
+import Contato from "./componentes/Contato/page"
 
 export default function Home() {
 
@@ -35,14 +35,7 @@ export default function Home() {
 
       <header id={styles.header}>
 
-        <nav id={styles.menu_header}>
-            <ul>
-              <li><Link href="#">Sobre</Link></li>
-              <li><Link href="#">Projetos</Link></li>
-              <li><Link href="#">Skills</Link></li>
-              <li><Link href="#">Contato</Link></li>
-            </ul>
-        </nav>
+        <MenuTopo />
         
         <div id={styles.banner_box}>
 
@@ -54,12 +47,20 @@ export default function Home() {
           <Image src={Banner} alt="imagem banner"></Image>
         </div>
 
+        <LeftBar 
+        git={Git}
+        wpp={Wpp}
+        linkedin={Linkedin}
+        email={Email}
+        />
+
       </header>
 
       <main className={styles.main}>
         <Sobre />
 
         <div id={styles.section_projetos}>
+          <div id={styles.icon1}><DiAtom /></div>
 
           <h2 className="alinhamento-conteudo">Projetos</h2>
           <Categorias 
@@ -67,12 +68,14 @@ export default function Home() {
           buttonClick={buttonClick}
           />
 
-            <div className="alinhamento-conteudo" id={styles.projetos_cards}>
-              {projetosFiltrados.map((projeto, index) => 
-                <Cards key={index} titulo={projeto.titulo} gif={projeto.gif} descricao={projeto.descricao}/>
-                )}  
-            </div>
+          <div className="alinhamento-conteudo" id={styles.projetos_cards}>
+            {projetosFiltrados.map((projeto, index) => 
+              <Cards key={index} titulo={projeto.titulo} gif={projeto.gif} img={projeto.img} descricao={projeto.descricao}/>
+              )}  
+          </div>
 
+          <div id={styles.icon2}><AiOutlineDeploymentUnit /></div>
+          <div id={styles.icon3}><AiOutlineCode /></div>
         </div>
 
         <Skills />
@@ -80,32 +83,13 @@ export default function Home() {
       </main>
 
       <footer id={styles.footer}>
-        <div className="alinhamento-conteudo" id={styles.container_contato}>
-          <h2>Contato</h2>
-
-          <div id={styles.links}>
-            <Link href="#">
-            <Image src={Wpp} alt="icone whatsapp"></Image>
-            (15)988231195
-            </Link>
-
-            <Link href="https://github.com/edgarfb17">
-            <Image src={Git} alt="icone github"></Image>
-            www.github.com/edgarfb17
-            </Link>
-
-            <Link href="https://www.linkedin.com/in/edgarfb/">
-            <Image src={Linkedin} alt="icone linkedin"></Image>
-            www.linkedin.com/in/edgarfb/
-            </Link>
-
-            <Link href="mailto:edgarfb@outlook.com.br">
-            <Image src={Email} alt="icone email"></Image>
-            edgarfb@outlook.com.br
-            </Link>
-          </div>
-
-        </div>
+        
+      <Contato 
+        git={Git}
+        wpp={Wpp}
+        linkedin={Linkedin}
+        email={Email}
+        />
 
         <div className="alinhamento-conteudo" id={styles.rodape}>
             <p>&copy;2025 Meu portifólio | Desenvolvedor Edgar F.B.</p>

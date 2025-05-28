@@ -25,6 +25,7 @@
 }
 
 #container_skills p:hover{
+    background-color: #e3d1ee;
     transform: scale(1.15);
     transition: 0.5s;
     cursor: default;

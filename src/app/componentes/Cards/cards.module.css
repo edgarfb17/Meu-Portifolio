@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    width: 280px;
+    width: 300px;
     border: 1px solid white;
     border-radius: 15px;
     background-color:#f6cebe;
@@ -14,6 +14,19 @@
     box-shadow: 1px 1px 1px black;
 }
 
+#container_card:hover{
+    transform: scale(1.15);
+    transition: 0.5s;
+    cursor: default;
+
+    #gif_projeto{
+        display:inline;
+    }
+
+    #img_projeto{
+        display: none;
+    }
+}
 
 #container_card img{
     width: 100%;
@@ -30,11 +43,15 @@
     margin: 0 10px;
 }
 
+#container_imgs{
+    width: 100%;
+}
+
 #img_projeto{
     width: 100%;
     height: 100%;
-    position: absolute;
 }
+
 #gif_projeto{
     display:none
 }

@@ -1,10 +1,13 @@
 import styles from "./sobre.module.css"
 import Image from "next/image"
 import Perfil from "../../../../public/Perfil.jpeg"
+import { DiCode } from "react-icons/di";
+import { DiIonic } from "react-icons/di";
 
 export default function Sobre(){
     return(
         <div id={styles.section_sobre}>
+            <div id={styles.icon1}><DiCode /></div>
             <div className="alinhamento-conteudo" id={styles.container_sobre}>
                 <div id={styles.container_txt}>
                     <h2>Sobre</h2>
@@ -20,8 +23,9 @@ export default function Sobre(){
                         com cursos, planos de estudo e projetos pessoais. 
                     </p>
                 </div>
-                <Image src={Perfil}></Image>
+                <Image src={Perfil} alt="Foto de Perfil"></Image>
             </div>
+            <div id={styles.icon2}><DiIonic /></div>
         </div>
     )
 }

@@ -5,6 +5,7 @@
     padding: 40px 0;
     gap: 50px;
     color: rgb(224, 224, 224);
+    position: relative;
 }
 
 #section_sobre img{
@@ -23,4 +24,22 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+#icon1 *,
+#icon2 *{
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#icon1{
+    position: absolute;
+    top: 35px;
+    left: 30px;
+}
+
+#icon2{
+    position: absolute;
+    bottom: 35px;
+    right: 30px;
 }
