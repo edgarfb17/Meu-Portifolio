@@ -6,21 +6,20 @@ import { DiIonic } from "react-icons/di";
 
 export default function Sobre(){
     return(
-        <div id={styles.section_sobre}>
+        <div className={styles.section_sobre} id="sobre">
             <div id={styles.icon1}><DiCode /></div>
             <div className="alinhamento-conteudo" id={styles.container_sobre}>
                 <div id={styles.container_txt}>
                     <h2>Sobre</h2>
                     <p> 
-                        Olá me chamo Edgar e tenho 23 Anos, pretendo entrar
-                        na área de Desenvolvimento Web pois gosto muito de
-                        computadores e resolver problemas, quero cursar mais
-                        cursos para me especializar melhor. Estou procurando
-                        qualquer serviço nessa área para aumentar meu
-                        conhecimento e experiência. Estou cursando atualmente
-                        faculdade de Análise e Desenvolvimento de Sistemas, e
-                        tenho ampliado bastante meu conhecimento em front-end
-                        com cursos, planos de estudo e projetos pessoais. 
+                       Olá, me chamo Edgar tenho 23 anos, atualmente estou no último 
+                       ano de Análise e Desenvolvimento de Sistemas, quero atuar como 
+                       Desenvolvedor Web sou apaixonado por tecnologia desde pequeno, 
+                       estou fazendo também plano de estudo e cursos por fora, com foco 
+                       em FullStack, tenho feito projetos Freelancers, pessoais e acadêmicos 
+                       a fim de consolidar e melhorar meus conhecimentos e experiências na 
+                       área, tenho certeza de que consigo contribuir com um time e assim 
+                       entregar ótimas soluções para nossa sociedade. 
                     </p>
                 </div>
                 <Image src={Perfil} alt="Foto de Perfil"></Image>

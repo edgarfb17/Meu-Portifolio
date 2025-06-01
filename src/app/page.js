@@ -23,7 +23,7 @@ import Contato from "./componentes/Contato/page"
 export default function Home() {
 
   const [ projetosFiltrados, setProjetosFiltrados ] = useState(projetosInicio)
-  const [ buttonClick, setButtonClick ] = useState("html/css")
+  const [ buttonClick, setButtonClick ] = useState("todas")
 
   const changeFilter = (categoria) => {
     setButtonClick(categoria)
@@ -59,7 +59,7 @@ export default function Home() {
       <main className={styles.main}>
         <Sobre />
 
-        <div id={styles.section_projetos}>
+        <div className={styles.section_projetos} id="projetos">
           <div id={styles.icon1}><DiAtom /></div>
 
           <h2 className="alinhamento-conteudo">Projetos</h2>

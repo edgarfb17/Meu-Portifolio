@@ -20,7 +20,7 @@ export const listaProjetos = [
         titulo: "Barbearia Barba Russa",
         gif: BarbaRussa_g,
         img: BarbaRussa_i,
-        categoria: "html/css",
+        categorias: ["html/css", "js", "todas"],
         descricao: "Projeto Freelancer Elaborado para a divulgação da barbearia Barba Russa"
     },
 
@@ -28,7 +28,7 @@ export const listaProjetos = [
         titulo: "Monks.",
         gif: Monks_g,
         img: Monks_i,
-        categoria: "html/css",
+        categorias: ["html/css", "js", "todas"],
         descricao: "Página que fiz para processo seletivo Monks."
     },
 
@@ -36,7 +36,7 @@ export const listaProjetos = [
         titulo: "Restaurant",
         gif: Restaurant_g,
         img: Restaurant_i,
-        categoria: "react",
+        categorias: ["react", "todas"],
         descricao: "Projeto Acadêmico para consolidação de aprendizados."
     },
 
@@ -44,7 +44,7 @@ export const listaProjetos = [
         titulo: "Clinica CM Life",
         gif: Clinica_g,
         img: Clinica_i,
-        categoria: "html/css",
+        categorias: ["html/css", "todas"],
         descricao: "Projeto Acadêmico para consolidação de aprendizados."
     },
 
@@ -52,7 +52,7 @@ export const listaProjetos = [
         titulo: "Agência de Design",
         gif: Design_g,
         img: Design_i,
-        categoria: "react",
+        categorias: ["react", "todas"],
         descricao: "Projeto Acadêmico para consolidação de aprendizados."
     },
     
@@ -60,7 +60,7 @@ export const listaProjetos = [
         titulo: "Pousada Secreta",
         gif: Pousada_g,
         img: Pousada_i,
-        categoria: "html/css",
+        categorias: ["html/css", "todas"],
         descricao: "Projeto Acadêmico para consolidação de aprendizados."
     },
 
@@ -68,7 +68,7 @@ export const listaProjetos = [
         titulo: "Rocky",
         gif: Rocky_g,
         img: Rocky_i,
-        categoria: "html/css",
+        categorias: ["html/css", "todas"],
         descricao: "Página que fiz para processo seletivo Rocky."
     },
 
@@ -76,7 +76,7 @@ export const listaProjetos = [
         titulo: "Agência de Viagens",
         gif: Viagens_g,
         img: Viagens_i,
-        categoria: "html/css",
+        categorias: ["html/css", "todas"],
         descricao: "Projeto Acadêmico para consolidação de aprendizados."
     },
 ]

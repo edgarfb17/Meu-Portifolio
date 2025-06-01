@@ -1,4 +1,4 @@
-#section_sobre{
+.section_sobre{
     background-color: #a5626e;
     display: flex;
     justify-content: center;
@@ -8,7 +8,7 @@
     position: relative;
 }
 
-#section_sobre img{
+.section_sobre img{
     height: 350px;
     width: 250px;
     border-radius: 30px;

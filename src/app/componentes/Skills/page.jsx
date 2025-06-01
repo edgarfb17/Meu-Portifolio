@@ -2,7 +2,7 @@ import styles from "./skills.module.css"
 
 export default function Skills(){
     return(
-        <div id={styles.section_skills}>
+        <div className={styles.section_skills} id="skills">
             <h2 className="alinhamento-conteudo">Skills</h2>
             <div className="alinhamento-conteudo" id={styles.container_skills}>
                 <p>HTML5</p>

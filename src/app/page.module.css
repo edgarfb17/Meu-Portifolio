@@ -42,7 +42,7 @@
 
 /*-----Projetos-----*/
 
-#section_projetos{
+.section_projetos{
     background-color: #093141;
     display: flex;
     justify-content: center;

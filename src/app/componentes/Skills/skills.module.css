@@ -1,11 +1,15 @@
-#section_skills{
-    background-color: #7bd0b5;
+.section_skills{
+    background-color: #74d6bf;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 70px;
     padding: 40px 0;
+}
+
+.section_skills h2{
+    color: #453059;
 }
 
 #container_skills{

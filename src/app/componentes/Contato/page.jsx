@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function Contato(props){
     return(
-        <div className="alinhamento-conteudo" id={styles.container_contato}>
+        <div className={`alinhamento-conteudo ${styles.container_contato}`} id="contato">
           <h2>Contato</h2>
 
           <div id={styles.links}>

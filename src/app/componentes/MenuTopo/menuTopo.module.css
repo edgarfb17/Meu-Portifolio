@@ -23,3 +23,16 @@
 #menu_header ul li:first-child{
     list-style: none;
 }
+
+#menu_header ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+#menu_header ul li a:hover{
+    background-color: #bacfa6;;
+    color: #453059;
+    transition: 0.3s;
+}
