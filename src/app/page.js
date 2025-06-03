@@ -19,6 +19,7 @@ import Skills from "./componentes/Skills/page"
 import LeftBar from "./componentes/LeftBar/page";
 import MenuTopo from "./componentes/MenuTopo/page"
 import Contato from "./componentes/Contato/page"
+import MaquinaDeEscrever from "./componentes/MaquinaDeEscrever/index";
 
 export default function Home() {
 
@@ -40,8 +41,8 @@ export default function Home() {
         <div id={styles.banner_box}>
 
           <div className="alinhamento-conteudo" id={styles.banner_txt}>
-            <h1>Edgar Fernandes</h1>
-            <h2>Desenvolvedor Web</h2>
+            <h1> <MaquinaDeEscrever txtRecebido="Edgar Fernandes" /> </h1>
+            <h2> <MaquinaDeEscrever txtRecebido="Desenvolvedor Web" /> </h2>
           </div>
 
           <Image src={Banner} alt="imagem banner"></Image>

@@ -1,23 +1,29 @@
 'use client'
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 
-export function MaquinaDeEscrever({txtRecebido}){
+export default function MaquinaDeEscrever({txtRecebido}){
     
     const [ text, setText ] = useState("")
+    let i = 0
+    let texto = ""
 
-    const escreverTexto = (txtRecebido, i = 0) => {
+    const escreverTexto = (txtRecebido, texto) => {
         let textoLetras = txtRecebido.split("")
-        setTimeOut(setText(text + textoLetras[i]),200)
+        texto = texto + textoLetras[i]
+        setText(texto)
         i++
-        if(text.length ==! txtRecebido.length){
-            escreverTexto(txtRecebido)
+        console.log(i)
+        if(text.length !== txtRecebido.length){
+            setTimeout(() => escreverTexto(txtRecebido), 2000)
         }
     }
+
+    useEffect(() => {
+        setTimeout(() => escreverTexto(txtRecebido, texto))
+    }, [])
     
     return(
-        <div>
-            {text}
-        </div>
+        <>{text}</>
     )
 }
