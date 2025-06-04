@@ -41,8 +41,8 @@ export default function Home() {
         <div id={styles.banner_box}>
 
           <div className="alinhamento-conteudo" id={styles.banner_txt}>
-            <h1> <MaquinaDeEscrever txtRecebido="Edgar Fernandes" /> </h1>
-            <h2> <MaquinaDeEscrever txtRecebido="Desenvolvedor Web" /> </h2>
+            <h1> <MaquinaDeEscrever txtH1="Edgar Bataglini" /> </h1>
+            <h2> <MaquinaDeEscrever txtH2="Desenvolvedor Web" /> </h2>
           </div>
 
           <Image src={Banner} alt="imagem banner"></Image>
