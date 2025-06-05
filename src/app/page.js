@@ -25,6 +25,7 @@ export default function Home() {
 
   const [ projetosFiltrados, setProjetosFiltrados ] = useState(projetosInicio)
   const [ buttonClick, setButtonClick ] = useState("todas")
+  const [ secondComponent, setSecondComponent ] = useState(false)
 
   const changeFilter = (categoria) => {
     setButtonClick(categoria)
@@ -41,7 +42,8 @@ export default function Home() {
         <div id={styles.banner_box}>
 
           <div className="alinhamento-conteudo" id={styles.banner_txt}>
-             <MaquinaDeEscrever txtH1="Edgar Bataglini" txtH2="Desenvolvedor Web"/> 
+            <h1><MaquinaDeEscrever setSecondComponent={setSecondComponent} txtRecebido="Edgar Bataglini  "/></h1> 
+            <h2>{secondComponent && <MaquinaDeEscrever txtRecebido="Desenvolvedor Web"/>}</h2> 
           </div>
 
           <Image src={Banner} alt="imagem banner"></Image>

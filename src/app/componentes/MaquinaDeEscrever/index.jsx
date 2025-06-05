@@ -1,43 +1,33 @@
 'use client'
 import { useEffect, useState } from "react"
 
-
-export default function MaquinaDeEscrever(props){
+export default function MaquinaDeEscrever({txtRecebido, setSecondComponent}){
     
-    //const cursor = document.querySelector(".cursor")
-    const txtsRecebidos = [props.txtH1, props.txtH2]
-    const [txts, setTxts] = useState(["", ""])
-    const arrayTxts = []
-    //const cursorToggle = () => {
-    //    setTimeout(() => cursor.classlist.toggle("show"), 100)
-    //}
+    const [text, setText] = useState("")
+    const [cursor, setCursor] = useState("|")
 
-    const escreverTexto = (txtRecebido, indexTxt, i = 0) => {
-        console.log("escrever")
+    const escreverTexto = (txtRecebido, i = 0) => {
         if(i < txtRecebido.length){
-            arrayTxts[indexTxt] = txtRecebido.slice(0, i + 1)
-            console.log(arrayTxts)
-            setTxts(arrayTxts)
-            setTimeout(() => escreverTexto(txtRecebido, indexTxt, i + 1), 200)
+            setCursor("|")
+            setText(txtRecebido.slice(0, i + 1))
+            setTimeout(() => escreverTexto(txtRecebido, i + 1), 200)
+        }
+        else{
+            setTimeout(() => escreverTexto(txtRecebido, i = 0), 3500)
+            setCursor("")
+            setSecondComponent(true)
         }
     }
 
     useEffect(() => {
-       // for(let index in txtsRecebidos){
-           // console.log("for")
-            escreverTexto(txtsRecebidos[1], 1)
-            console.log(txtsRecebidos[1])
-           // break
-        //}
-        //while(true){cursorToggle()} 
+        escreverTexto(txtRecebido)
     }, [])
 
     
 
     return(
         <>
-        <h1>{txts[0]}</h1>
-        <h2>{txts[1]}</h2><span className="cursor">|</span>
+        {text}<span>{cursor}</span>
         </>
     )
 }
