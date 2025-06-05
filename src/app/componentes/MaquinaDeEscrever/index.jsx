@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useState } from "react"
+import styles from "./maquinaDeEscrever.module.css"
 
 export default function MaquinaDeEscrever({txtRecebido, setSecondComponent}){
     
@@ -27,7 +28,7 @@ export default function MaquinaDeEscrever({txtRecebido, setSecondComponent}){
 
     return(
         <>
-        {text}<span>{cursor}</span>
+        {text}<span id={styles.cursor}>{cursor}</span>
         </>
     )
 }
