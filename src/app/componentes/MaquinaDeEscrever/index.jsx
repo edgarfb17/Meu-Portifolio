@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react"
 import styles from "./maquinaDeEscrever.module.css"
 
-export default function MaquinaDeEscrever({txtRecebido, setSecondComponent}){
+export default function MaquinaDeEscrever({txtRecebido, setSecondComponent, secondComponent}){
     
     const [text, setText] = useState("")
     const [cursor, setCursor] = useState("|")
@@ -14,9 +14,9 @@ export default function MaquinaDeEscrever({txtRecebido, setSecondComponent}){
             setTimeout(() => escreverTexto(txtRecebido, i + 1), 200)
         }
         else{
-            setTimeout(() => escreverTexto(txtRecebido, i = 0), 3500)
+            setTimeout(() => escreverTexto(txtRecebido, i = 0), 5000)
             setCursor("")
-            setSecondComponent(true)
+            setSecondComponent(secondComponent ? false : true)      
         }
     }
 

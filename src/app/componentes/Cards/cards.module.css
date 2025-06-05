@@ -12,6 +12,7 @@
     flex-grow: 1;
     text-align: center;
     box-shadow: 1px 1px 1px black;
+    z-index: 2;
 }
 
 #container_card:hover{
