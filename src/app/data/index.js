@@ -15,6 +15,8 @@ import Rocky_i from "../../../public/ProjetoRocky.png"
 import Viagens_g from "../../../public/ProjetoViagens.gif"
 import Viagens_i from "../../../public/ProjetoViagens.png"
 
+const tecnologias = [<span className="tecnologias">HTML, CSS</span>,<span className="tecnologias">JS</span>,<span className="tecnologias">React.JS</span>]
+
 export const listaProjetos = [
     {
         titulo: "Barbearia Barba Russa",
