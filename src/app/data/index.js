@@ -21,7 +21,9 @@ export const listaProjetos = [
         gif: BarbaRussa_g,
         img: BarbaRussa_i,
         categorias: ["html/css", "js", "todas"],
-        descricao: "Projeto Freelancer Elaborado para a divulgação da barbearia Barba Russa"
+        descricao: `Projeto freelancer que fiz, para a divulgação de uma barbearia
+        da minha cidade usando ${tecnologias[0] + tecnologias[1]} uma boa experiência para consolidação
+        de todos meus conhecimentos até o momento.`
     },
 
     {
@@ -29,7 +31,9 @@ export const listaProjetos = [
         gif: Monks_g,
         img: Monks_i,
         categorias: ["html/css", "js", "todas"],
-        descricao: "Página que fiz para processo seletivo Monks."
+        descricao: `Projeto que fiz para processo seletivo, usando ${tecnologias[0] + tecnologias[1]}
+        projeto bem parecido com o Rocky, com mais prática consegui executar algo mais
+        bem estruturado e limpo, com algumas experiências novas como manipulação de vetores e Grid layout.`
     },
 
     {
@@ -37,7 +41,8 @@ export const listaProjetos = [
         gif: Restaurant_g,
         img: Restaurant_i,
         categorias: ["react", "todas"],
-        descricao: "Projeto Acadêmico para consolidação de aprendizados."
+        descricao: `Projeto acadêmico que fiz usando ${tecnologias[2]} obtive experências como componentização, 
+        variáveis de estado e funções nativas.`
     },
 
     {
@@ -45,7 +50,8 @@ export const listaProjetos = [
         gif: Clinica_g,
         img: Clinica_i,
         categorias: ["html/css", "todas"],
-        descricao: "Projeto Acadêmico para consolidação de aprendizados."
+        descricao: `Projeto acadêmico que fiz usando ${tecnologias[0]} para consolidação de experiências 
+        como Flex Box, postagem de sites e navegação entre páginas`
     },
 
     {
@@ -53,7 +59,8 @@ export const listaProjetos = [
         gif: Design_g,
         img: Design_i,
         categorias: ["react", "todas"],
-        descricao: "Projeto Acadêmico para consolidação de aprendizados."
+        descricao: `Projeto acadêmico que fiz usando ${tecnologias[2]} obtive experências como componentização e 
+        variáveis de estado.` 
     },
     
     {
@@ -61,7 +68,8 @@ export const listaProjetos = [
         gif: Pousada_g,
         img: Pousada_i,
         categorias: ["html/css", "todas"],
-        descricao: "Projeto Acadêmico para consolidação de aprendizados."
+        descricao: `Projeto acadêmico que fiz usando ${tecnologias[0]} para consolidação de experiências 
+        como layout responsivo e navegação entre páginas.`  
     },
 
     {
@@ -69,7 +77,9 @@ export const listaProjetos = [
         gif: Rocky_g,
         img: Rocky_i,
         categorias: ["html/css", "todas"],
-        descricao: "Página que fiz para processo seletivo Rocky."
+        descricao: `Projeto que fiz para o processo seletivo, usando ${tecnologias[0]}
+         obtive experiências em animações de layout, design responsivo e formularios, 
+         uma das minhas primeiras experiências relacionando HTML, CSS com JS.`
     },
 
     {
@@ -77,6 +87,7 @@ export const listaProjetos = [
         gif: Viagens_g,
         img: Viagens_i,
         categorias: ["html/css", "todas"],
-        descricao: "Projeto Acadêmico para consolidação de aprendizados."
+        descricao: `Projeto acadêmico que fiz usando ${tecnologias[0]} para consolidação
+         de experiências como Flex Box, formularios e postagem de sites`
     },
 ]
