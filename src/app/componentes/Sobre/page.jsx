@@ -14,7 +14,7 @@ export default function Sobre(){
                     <p> 
                        Olá, me chamo Edgar tenho 23 anos, atualmente estou no último 
                        ano de Análise e Desenvolvimento de Sistemas, quero atuar como 
-                       Desenvolvedor Web sou apaixonado por tecnologia desde pequeno, 
+                       Desenvolvedor FullStack sou apaixonado por tecnologia desde pequeno, 
                        estou fazendo também plano de estudo e cursos por fora, com foco 
                        em FullStack, tenho feito projetos Freelancers, pessoais e acadêmicos 
                        a fim de consolidar e melhorar meus conhecimentos e experiências na 

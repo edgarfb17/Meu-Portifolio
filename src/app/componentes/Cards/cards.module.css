@@ -19,6 +19,7 @@
     transform: scale(1.15);
     transition: 0.5s;
     cursor: default;
+    z-index: 3;
 
     #gif_projeto{
         display:inline;
@@ -60,4 +61,20 @@
 
 #gif_projeto{
     display:none
+}
+
+#container_descricao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#container_descricao p{
+    font-size: 20px;
+}
+
+#container_descricao p span{
+    font-weight: bold;
 }

@@ -27,6 +27,7 @@ export default function Home() {
   const [ buttonClick, setButtonClick ] = useState("todas")
   const [ secondComponent, setSecondComponent ] = useState(false)
 
+
   const changeFilter = (categoria) => {
     setButtonClick(categoria)
     setProjetosFiltrados(filtrarCategoria(categoria))
