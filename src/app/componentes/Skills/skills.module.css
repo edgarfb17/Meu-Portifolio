@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     gap: 70px;
-    padding: 40px 0;
+    width: 100%;
 }
 
 .section_skills h2{

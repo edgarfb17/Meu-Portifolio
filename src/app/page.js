@@ -62,10 +62,10 @@ export default function Home() {
       <main className={styles.main}>
         <Sobre />
 
-        <div className={styles.section_projetos} id="projetos">
+        <section className={styles.section_projetos} id="projetos">
           <div id={styles.icon1}><DiAtom /></div>
-
           <h2 className="alinhamento-conteudo">Projetos</h2>
+
           <Categorias 
           changeFilter={changeFilter}
           buttonClick={buttonClick}
@@ -79,25 +79,25 @@ export default function Home() {
 
           <div id={styles.icon2}><AiOutlineDeploymentUnit /></div>
           <div id={styles.icon3}><AiOutlineCode /></div>
-        </div>
+        </section>
 
         <Skills />
        
       </main>
 
       <footer id={styles.footer}>
-        
-      <Contato 
-        git={Git}
-        wpp={Wpp}
-        linkedin={Linkedin}
-        email={Email}
-        />
-
-        <div className="alinhamento-conteudo" id={styles.rodape}>
+        <section id={styles.section_footer}> 
+          <Contato 
+            git={Git}
+            wpp={Wpp}
+            linkedin={Linkedin}
+            email={Email}
+          />
+        </section>
+        <div id={styles.rodape}>
             <p>&copy;2025 Meu portifólio | Desenvolvedor Edgar F.B.</p>
         </div>
-      </footer>
+      </footer> 
     </div>
   );
 }

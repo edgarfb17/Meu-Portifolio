@@ -5,7 +5,6 @@
     justify-content: space-around;
     align-items: center;
     gap: 70px;
-    padding: 40px 0
 }
 
 .container_contato a{
@@ -22,7 +21,7 @@
     height: 100%;
 }
 
-#links{
+#container_links{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -31,7 +30,7 @@
     gap: 10px;
 }
 
-#links a{
+.links{
     flex-grow: 1;
     max-width: 200px;
     display: flex;
@@ -40,14 +39,37 @@
     align-items: center;
 }
 
-#links a img{
+.links img{
     width: 100%;
     padding: 15px;
     box-sizing: border-box;
 }
 
-#links a:nth-child(1),
-#links a:nth-child(2),
-#links a:nth-child(3){
+#container_links div:nth-child(1),
+#container_links div:nth-child(2),
+#container_links div:nth-child(3){
     border-right: 1px solid grey;
 }
+
+.links a[href="https://wa.me/5515988231195"]{
+    background-color: #128c7e;
+}
+
+.links a[href="https://github.com/edgarfb17"]{
+    background-color: #5f6a75;
+}
+
+.links a[href="https://www.linkedin.com/in/edgarfb/"]{
+    background-color: #e9f0f3;
+}
+
+.links a[href="mailto:edgarfb@outlook.com.br"]{
+    background-color: blanchedalmond;
+}
+
+.links a:hover{
+    transform: scale(1.15);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
