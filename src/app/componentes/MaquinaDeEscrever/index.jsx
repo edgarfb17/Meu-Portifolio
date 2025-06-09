@@ -11,10 +11,10 @@ export default function MaquinaDeEscrever({txtRecebido, setSecondComponent, seco
         if(i < txtRecebido.length){
             setCursor("|")
             setText(txtRecebido.slice(0, i + 1))
-            setTimeout(() => escreverTexto(txtRecebido, i + 1), 200)
+            setTimeout(() => escreverTexto(txtRecebido, i + 1), 250)
         }
         else{
-            setTimeout(() => escreverTexto(txtRecebido, i = 0), 5000)
+            setTimeout(() => escreverTexto(txtRecebido, i = 0), 6000)
             setCursor("")
             setSecondComponent(secondComponent ? false : true)      
         }
