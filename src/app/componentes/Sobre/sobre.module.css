@@ -25,6 +25,8 @@
 #container_txt{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    height: 100%;
     gap: 30px;
 }
 
@@ -44,4 +46,10 @@
     position: absolute;
     bottom: 35px;
     right: 30px;
+}
+
+@media(max-width: 1200px) {
+    #container_txt p{
+        font-size: 20px;
+    }
 }

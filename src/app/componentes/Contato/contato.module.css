@@ -32,7 +32,7 @@
 
 .links{
     flex-grow: 1;
-    max-width: 200px;
+    max-width: 240px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,10 +64,14 @@
 .links a{
     padding-bottom: 20px;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .links a:hover{
-    transform: scale(1.15);
+    transform: scale(1.20);
     transition: 0.5s;
     cursor: pointer;
 }

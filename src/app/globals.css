@@ -4,11 +4,12 @@
   font-family: 'Roboto Mono', sans-serif;
   margin: 0;
   padding: 0;
-  font-size: 1.25rem;
+  
 }
 
 html{
   scroll-behavior: smooth;
+  font-size: 1.40rem;
 }
 
 .alinhamento-conteudo{
@@ -21,14 +22,14 @@ section{
 }
 
 @media(max-width: 1200px){
-  *{
-    font-size: 1.05em;
+  html{
+    font-size: 1.10rem;
   }
 }
 
 h1{
   font-family: "Bungee Inline" , sans-serif;
-  font-size: 2.9rem;
+  font-size: 2.5rem;
   margin: 0;
 }
 
@@ -37,12 +38,12 @@ h2{
   width: 100%;
   margin: 0;
   font-family: "Montserrat" , sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   padding-bottom: 5px;
   border-bottom: 1px solid rgb(151, 151, 151);
 }
 
 h3{
   font-family: "Montserrat" , sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.0rem;
 }
