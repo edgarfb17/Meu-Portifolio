@@ -1,19 +1,30 @@
+#container_position{
+    position: relative;
+    width: 300px;
+    max-width: 500px;
+    max-height: 385px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
 #container_card{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    width: 300px;
     border: 1px solid white;
     border-radius: 12px;
     background-color:#f6cebe;
     padding: 25px 0;
     max-width: 500px;
-    max-height: 355px;
-    flex-grow: 1;
+    max-height: 390px;
     text-align: center;
     box-shadow: 2px 2px 2px black;
     z-index: 2;
+    box-sizing: border-box;
 }
 
 #container_card:hover{
@@ -21,9 +32,12 @@
     transition: 0.8s;
     cursor: default;
     z-index: 3;
+    width: 400px;
     max-width: 1000px;
     max-height: 600px;
     overflow: visible;
+    position: absolute;
+    right: 10px;
 
     #gif_projeto{
         display:inline;
@@ -37,7 +51,7 @@
 #container_card img{
     width: 100%;
     max-width: 700px;
-    height: 320px;
+    height: 310px;
 }
 
 #container_card h3{
@@ -74,7 +88,6 @@
     width: 100%;
     height: 100%;
     overflow-y: hidden;
-    text-overflow: ellipsis;
 }
 
 #container_descricao p{
@@ -88,3 +101,15 @@
 #container_descricao p span{
     font-weight: bold;
 }
+
+/*@media(max-width: 1370px){
+    #container_position{
+        max-width: 400px;
+        max-height: 245px;
+        width: 240px;
+    }
+
+    #container_card img{
+        height: 220px;
+    }
+}*/
