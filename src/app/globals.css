@@ -23,6 +23,12 @@ section{
 
 @media(max-width: 1370px){
   html{
+    font-size: 1.25rem;
+  }
+}
+
+@media(max-width: 1160px){
+  html{
     font-size: 1.10rem;
   }
 }

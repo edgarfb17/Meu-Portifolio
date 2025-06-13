@@ -40,6 +40,12 @@
     background-color: blanchedalmond;
 }
 
+#link_wpp,
+#link_git,
+#link_linkedin,
+#link_email{
+    transition: 0.5s;
+}
 
 #link_wpp:hover{
     background-color: #14b8a4;
@@ -55,11 +61,4 @@
 
 #link_email:hover{
     background-color: rgb(241, 203, 144);
-}
-
-#link_wpp:hover,
-#link_git:hover,
-#link_linkedin:hover,
-#link_email:hover{
-    transition: 0.5s;
 }

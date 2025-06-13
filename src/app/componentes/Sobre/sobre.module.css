@@ -13,6 +13,12 @@
     max-width: 450px;
     border-radius: 30px;
     border: 2px solid #1f6384;
+    box-sizing: border-box;
+    transition: 0.8s;
+}
+
+.section_sobre img:hover{
+    transform: scale(1.05);
 }
 
 #container_sobre{
@@ -48,8 +54,8 @@
     right: 30px;
 }
 
-@media(max-width: 1200px) {
-    #container_txt p{
-        font-size: 20px;
-    }
+@media(max-width: 1370px){
+  .section_sobre img{
+    max-height: 350px;
+  }
 }
