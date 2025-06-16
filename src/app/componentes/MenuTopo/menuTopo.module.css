@@ -36,3 +36,9 @@
     background-color: #bacfa6;;
     color: #453059;
 }
+
+@media(max-width: 1370px){
+    #menu_header{
+        height: 65px;
+    }
+}
