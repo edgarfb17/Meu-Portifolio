@@ -62,3 +62,23 @@
 #link_email:hover{
     background-color: rgb(241, 203, 144);
 }
+
+@media(max-width: 1160px){
+    #container_left_bar{
+        height: 115px;
+        width: 45px;
+    }
+    #container_left_bar a img{
+        padding: 10px;
+    }
+}
+
+@media(max-width: 770px){
+    #container_left_bar{
+        height: 105px;
+        width: 38px;
+    }
+    #container_left_bar a img{
+        padding: 8px;
+    }
+}

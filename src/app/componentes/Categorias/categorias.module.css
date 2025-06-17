@@ -9,8 +9,8 @@
 
 
 #container_categorias button{
-    padding: 10px;
-    max-width: 150px;
+    padding: 20px;
+    max-width: 180px;
     height: 50px;
     border-radius: 18px;
     border: 1px solid rgb(184, 181, 181);
@@ -29,7 +29,9 @@
 }
 
 #container_categorias button img{
+    min-width: 30px;
     width: 100%;
+    min-height: 30px;
     height: 100%;
 }
 
@@ -41,4 +43,18 @@
 .btnAcesso{
     background-color: #453059;
     color: #bacfa6;
+}
+
+@media(max-width: 1294px){
+    #container_categorias button{
+        max-width: 150px;
+        padding: 5px;
+        height: 40px;
+    }
+    #container_categorias button img{
+        min-height: 20px;
+        min-width: 20px;
+        width: 20px;
+        height: 20px;
+    }
 }
