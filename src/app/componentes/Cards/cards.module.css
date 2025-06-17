@@ -108,6 +108,12 @@
     font-weight: bold;
 }
 
+@media(max-width: 1370px){
+    #container_card:hover{
+        transform: scale(1.17, 1.10);
+    }
+}
+
 @media(max-width: 1294px){
     #container_position, #container_card{
         min-height: 270px;
@@ -115,16 +121,26 @@
     }
 
     #container_card img{
-        max-height: 230px;
+        max-height: 200px;
     }
 
     #container_imgs{
-        min-height: 270px;
+        min-height: 240px;
     }
 }
 
-@media(max-width: 1370px){
-    #container_card:hover{
-        transform: scale(1.17, 1.10);
+@media(max-width: 1192px){
+    #container_card{
+        max-width: 400px;
+    }
+}
+
+@media(max-width: 770px){
+    #container_imgs{
+        min-height: 240px;
+    }
+
+    #container_card img{
+        max-height: 200px;
     }
 }
