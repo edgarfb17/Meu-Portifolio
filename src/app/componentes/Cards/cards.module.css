@@ -144,3 +144,12 @@
         max-height: 200px;
     }
 }
+
+@media(max-width: 400px){
+    #container_card:hover{
+        transform: scale(1.08, 1.10);
+    }
+    #container_card{
+        max-width: 270px;
+    }
+}

@@ -37,6 +37,25 @@ section{
   html{
     font-size: 1.0rem;
   }
+
+  section{
+    padding: 35px 40px 35px 60px;
+  }
+}
+
+@media(max-width: 500px){
+  html{
+    font-size: 0.9rem;
+  }
+}
+
+@media(max-width: 400px){
+  section{
+    padding: 35px 30px 35px 30px;
+  }
+  h2{
+    font-size: 1.8rem;
+  }
 }
 
 h1{
