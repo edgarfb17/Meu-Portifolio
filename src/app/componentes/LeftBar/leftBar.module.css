@@ -40,6 +40,12 @@
     background-color: blanchedalmond;
 }
 
+#link_wpp,
+#link_git,
+#link_linkedin,
+#link_email{
+    transition: 0.5s;
+}
 
 #link_wpp:hover{
     background-color: #14b8a4;
@@ -57,9 +63,42 @@
     background-color: rgb(241, 203, 144);
 }
 
-#link_wpp:hover,
-#link_git:hover,
-#link_linkedin:hover,
-#link_email:hover{
-    transition: 0.5s;
+@media(max-width: 1160px){
+    #container_left_bar{
+        height: 115px;
+        width: 45px;
+    }
+    #container_left_bar a img{
+        padding: 10px;
+    }
+}
+
+@media(max-width: 770px){
+    #container_left_bar{
+        height: 105px;
+        width: 38px;
+    }
+    #container_left_bar a img{
+        padding: 8px;
+    }
+}
+
+@media(max-width: 400px){
+    #container_left_bar{
+        position: fixed;
+        top: auto;
+        bottom: 20px;
+        left: 20px;
+        height: 45px;
+        width: 45px;
+        overflow: hidden;
+    }
+    #link_wpp{
+        border-radius: 100%;
+    }
+    #link_git, #link_linkedin, #link_email{
+        visibility: hidden;
+        transition: 0;
+    }
+
 }

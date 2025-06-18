@@ -6,7 +6,7 @@ import { DiIonic } from "react-icons/di";
 
 export default function Sobre(){
     return(
-        <div className={styles.section_sobre} id="sobre">
+        <section className={styles.section_sobre} id="sobre">
             <div id={styles.icon1}><DiCode /></div>
             <div className="alinhamento-conteudo" id={styles.container_sobre}>
                 <div id={styles.container_txt}>
@@ -14,7 +14,7 @@ export default function Sobre(){
                     <p> 
                        Olá, me chamo Edgar tenho 23 anos, atualmente estou no último 
                        ano de Análise e Desenvolvimento de Sistemas, quero atuar como 
-                       Desenvolvedor Web sou apaixonado por tecnologia desde pequeno, 
+                       Desenvolvedor FullStack sou apaixonado por tecnologia desde pequeno, 
                        estou fazendo também plano de estudo e cursos por fora, com foco 
                        em FullStack, tenho feito projetos Freelancers, pessoais e acadêmicos 
                        a fim de consolidar e melhorar meus conhecimentos e experiências na 
@@ -25,6 +25,6 @@ export default function Sobre(){
                 <Image src={Perfil} alt="Foto de Perfil"></Image>
             </div>
             <div id={styles.icon2}><DiIonic /></div>
-        </div>
+        </section>
     )
 }

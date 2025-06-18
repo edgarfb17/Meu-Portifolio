@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     gap: 70px;
-    padding: 40px 0;
+    width: 100%;
 }
 
 .section_skills h2{
@@ -26,11 +26,11 @@
     background-color: #d1abe7;
     border-radius: 15px;
     box-shadow: 1px 1px 1px black;
+    transition: 0.5s;
 }
 
 #container_skills p:hover{
     background-color: #e3d1ee;
     transform: scale(1.15);
-    transition: 0.5s;
     cursor: default;
 }

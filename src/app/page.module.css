@@ -1,5 +1,6 @@
 #page{
     width: 100%;
+    margin: 0;
 }
 
 /*-----Header/Banner-----*/
@@ -13,7 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 88vh;
 }
 
 #banner_box img{
@@ -24,8 +25,8 @@
 
 #banner_txt{
     position: absolute;
-    width: 100%;
     left: 30px;
+    padding-left: 80px;
 }
 
 #banner_txt *{
@@ -36,9 +37,14 @@
     font-family: "Roboto Mono", sans-serif;
     color: black;
     border: none;
+    font-size: 1.4rem;
 }
 
 /*-----Header/Banner-----*/
+
+#main{
+    width: 100%;
+}
 
 /*-----Projetos-----*/
 
@@ -49,8 +55,8 @@
     align-items: center;
     flex-direction: column;
     gap: 40px;
-    padding: 40px 0;
     position: relative;
+    width: 100%;
 }
 
 #projetos_cards{
@@ -90,24 +96,48 @@
 /*-----Footer-----*/
 
 #footer{
+    width: 100%;
     background-color: #1d6484;
+}
+
+#section_footer{
     width: 100%; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;   
+    box-sizing: border-box;
 }
 
-#footer h2{
+#section_footer h2{
     border: none;
 }
 
 #rodape{
     width: 100%;
     height: 60px;
+    padding: 5px 0;
     border-top: 1px solid #5f7d99;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+#rodape p{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    color: #9ea0a1;
+    font-size: 17px;
+}
 
+@media(max-width: 770px){
+    #banner_txt{
+        padding-left: 40px;
+    }
+}
+
+@media(max-width: 400px){
+    #banner_txt{
+        padding-left: 20px;
+    }
+}

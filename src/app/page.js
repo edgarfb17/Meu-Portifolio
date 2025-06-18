@@ -19,11 +19,14 @@ import Skills from "./componentes/Skills/page"
 import LeftBar from "./componentes/LeftBar/page";
 import MenuTopo from "./componentes/MenuTopo/page"
 import Contato from "./componentes/Contato/page"
+import MaquinaDeEscrever from "./componentes/MaquinaDeEscrever/index";
 
 export default function Home() {
 
   const [ projetosFiltrados, setProjetosFiltrados ] = useState(projetosInicio)
   const [ buttonClick, setButtonClick ] = useState("todas")
+  const [ secondComponent, setSecondComponent ] = useState(false)
+
 
   const changeFilter = (categoria) => {
     setButtonClick(categoria)
@@ -40,8 +43,8 @@ export default function Home() {
         <div id={styles.banner_box}>
 
           <div className="alinhamento-conteudo" id={styles.banner_txt}>
-            <h1>Edgar Fernandes</h1>
-            <h2>Desenvolvedor Web</h2>
+            <h1><MaquinaDeEscrever setSecondComponent={setSecondComponent} secondComponent={secondComponent} txtRecebido="Edgar Bataglini  "/></h1> 
+            <h2>{secondComponent && <MaquinaDeEscrever txtRecebido="Desenvolvedor Web"/>}</h2>
           </div>
 
           <Image src={Banner} alt="imagem banner"></Image>
@@ -59,10 +62,10 @@ export default function Home() {
       <main className={styles.main}>
         <Sobre />
 
-        <div className={styles.section_projetos} id="projetos">
+        <section className={styles.section_projetos} id="projetos">
           <div id={styles.icon1}><DiAtom /></div>
-
           <h2 className="alinhamento-conteudo">Projetos</h2>
+
           <Categorias 
           changeFilter={changeFilter}
           buttonClick={buttonClick}
@@ -70,31 +73,31 @@ export default function Home() {
 
           <div className="alinhamento-conteudo" id={styles.projetos_cards}>
             {projetosFiltrados.map((projeto, index) => 
-              <Cards key={index} titulo={projeto.titulo} gif={projeto.gif} img={projeto.img} descricao={projeto.descricao}/>
+              <Cards key={index} titulo={projeto.titulo} gif={projeto.gif} img={projeto.img} descricao={projeto.descricao} link={projeto.link}/>
               )}  
           </div>
 
           <div id={styles.icon2}><AiOutlineDeploymentUnit /></div>
           <div id={styles.icon3}><AiOutlineCode /></div>
-        </div>
+        </section>
 
         <Skills />
        
       </main>
 
       <footer id={styles.footer}>
-        
-      <Contato 
-        git={Git}
-        wpp={Wpp}
-        linkedin={Linkedin}
-        email={Email}
-        />
-
-        <div className="alinhamento-conteudo" id={styles.rodape}>
+        <section id={styles.section_footer}> 
+          <Contato 
+            git={Git}
+            wpp={Wpp}
+            linkedin={Linkedin}
+            email={Email}
+          />
+        </section>
+        <div id={styles.rodape}>
             <p>&copy;2025 Meu portifólio | Desenvolvedor Edgar F.B.</p>
         </div>
-      </footer>
+      </footer> 
     </div>
   );
 }

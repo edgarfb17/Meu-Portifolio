@@ -2,27 +2,37 @@
     background-color: #a5626e;
     display: flex;
     justify-content: center;
-    padding: 40px 0;
     gap: 50px;
     color: rgb(224, 224, 224);
     position: relative;
 }
 
 .section_sobre img{
-    height: 350px;
-    width: 250px;
+    max-height: 400px;
+    width: 100%;
+    max-width: 450px;
     border-radius: 30px;
     border: 2px solid #1f6384;
+    box-sizing: border-box;
+    transition: 0.8s;
+}
+
+.section_sobre img:hover{
+    transform: scale(1.05);
 }
 
 #container_sobre{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
 }
 
 #container_txt{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    height: 100%;
     gap: 30px;
 }
 
@@ -35,7 +45,7 @@
 #icon1{
     position: absolute;
     top: 35px;
-    left: 30px;
+    left: 40px;
 }
 
 #icon2{
@@ -43,3 +53,33 @@
     bottom: 35px;
     right: 30px;
 }
+
+@media(max-width: 1370px){
+  .section_sobre img{
+    max-height: 350px;
+  }
+}
+
+@media(max-width: 845px){
+    .section_sobre img{
+        display: none;
+    }
+    #icon1{
+        left: 18px;
+    }
+    #container_txt{
+        gap: 15px;
+    }
+}
+
+@media(max-width: 400px){
+  #container_txt{
+    font-size: 0.8rem;
+  }
+  #icon1{
+        left: 0px;
+        top: 50px;
+    }
+}
+
+
