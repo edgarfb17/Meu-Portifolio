@@ -1,5 +1,4 @@
 'use client'
-import { Helmet } from 'react-helmet';
 import { useState } from "react";
 import { projetosInicio } from "./servico/index"
 import { menuTroca } from "./servico"
@@ -42,9 +41,6 @@ export default function Home() {
 
   return(
     <div id={styles.page}>
-      <Helmet>
-            <link rel="shortcut icon" type="image/png" href="../../public/icon.png"></link>
-      </Helmet>
 
       <header id={styles.header}>
 

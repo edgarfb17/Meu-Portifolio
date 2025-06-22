@@ -3,7 +3,7 @@ import "./globals.css";
 
 
 export const metadata = {
-  title: "Edgar Fernandes",
+  title: "Edgar Bataglini",
   description: "Meu Portifolio",
 };
 
@@ -12,6 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
+      <head>
+        <link rel="shortcut icon" type="image/png" href="./favicon.ico"></link>
+      </head>
       <body className="body">
         {children}
       </body>

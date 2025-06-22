@@ -8,7 +8,7 @@ export default function Cards(props){
             <div id={styles.container_card}>
                 <h3>{props.titulo}</h3>
                 <div id={styles.container_imgs}>
-                    <Link href={props.link} id={styles.link_projeto} target="_blank"><Image id={styles.gif_projeto} src={props.gif} alt="gifs projetos"></Image></Link>
+                    <Link href={props.link  ?? ''} id={styles.link_projeto} target="_blank"><Image id={styles.gif_projeto} src={props.gif} alt="gifs projetos"></Image></Link>
                     <Image id={styles.img_projeto} src={props.img} alt="img projeto"></Image>
                     <span>Clique na imagem para ver o projeto</span>
                 </div>

@@ -1,3 +1,4 @@
+'use client'
 import styles from "./menuTopo.module.css"
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";

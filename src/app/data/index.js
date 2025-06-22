@@ -43,7 +43,7 @@ export const listaProjetos = [
         titulo: "Restaurant",
         gif: Restaurant_g,
         img: Restaurant_i,
-        link: "https://github.com/edgarfb17/Cardapio-restaurant.git",
+        link: "https://cardapio-restaurant-self.vercel.app/",
         categorias: ["react", "todas"],
         descricao: `Projeto acadêmico que fiz usando React.JS, obtive experências como componentização, 
         variáveis de estado e funções nativas.`
