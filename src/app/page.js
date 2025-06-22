@@ -1,6 +1,8 @@
 'use client'
+import { Helmet } from 'react-helmet';
 import { useState } from "react";
 import { projetosInicio } from "./servico/index"
+import { menuTroca } from "./servico"
 import { filtrarCategoria } from "./servico";
 import { DiAtom } from "react-icons/di";
 import { AiOutlineDeploymentUnit } from "react-icons/ai";
@@ -26,6 +28,7 @@ export default function Home() {
   const [ projetosFiltrados, setProjetosFiltrados ] = useState(projetosInicio)
   const [ buttonClick, setButtonClick ] = useState("todas")
   const [ secondComponent, setSecondComponent ] = useState(false)
+  const [ menuOpen, setMenuOpen ] = useState("off")
 
 
   const changeFilter = (categoria) => {
@@ -33,12 +36,22 @@ export default function Home() {
     setProjetosFiltrados(filtrarCategoria(categoria))
   }
 
+  const menuToggle = (status) => {
+    setMenuOpen(menuTroca(status))
+  }
+
   return(
     <div id={styles.page}>
+      <Helmet>
+            <link rel="shortcut icon" type="image/png" href="../../public/icon.png"></link>
+      </Helmet>
 
       <header id={styles.header}>
 
-        <MenuTopo />
+        <MenuTopo 
+        menu={menuOpen}
+        menuToggle={menuToggle}
+        />
         
         <div id={styles.banner_box}>
 

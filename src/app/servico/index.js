@@ -10,4 +10,6 @@ export const filtrarCategoria = (categoria) => {
     })
 }
 
+export const menuTroca = (status) => {return status === "on" ? "off" : "on"}
+
 export const projetosInicio = listaProjetos
