@@ -21,7 +21,7 @@ export const listaProjetos = [
         titulo: "Barbearia Barba Russa",
         gif: BarbaRussa_g,
         img: BarbaRussa_i,
-        link: "https://github.com/edgarfb17/Barbearia-Barba-Russa.git",
+        link: "https://barbearia-barba-russa.vercel.app/",
         categorias: ["html/css", "js", "todas"],
         descricao: `Projeto freelancer que fiz, para a divulgação de uma barbearia
         da minha cidade usando HTML, CSS e JS, uma boa experiência para consolidação
@@ -32,7 +32,7 @@ export const listaProjetos = [
         titulo: "Monks.",
         gif: Monks_g,
         img: Monks_i,
-        link: "https://github.com/edgarfb17/Projeto-Monks.git",
+        link: "https://projeto-monks.vercel.app/",
         categorias: ["html/css", "js", "todas"],
         descricao: `Projeto que fiz para processo seletivo, usando HTML, CSS e JS,
         projeto bem parecido com o Rocky, com mais prática consegui executar algo mais
@@ -53,7 +53,7 @@ export const listaProjetos = [
         titulo: "Clinica CM Life",
         gif: Clinica_g,
         img: Clinica_i,
-        link: "https://github.com/edgarfb17/Clinica.git",
+        link: "https://clinica-tan.vercel.app/",
         categorias: ["html/css", "todas"],
         descricao: `Projeto acadêmico que fiz usando HTML e CSS, para consolidação de experiências 
         como Flex Box, postagem de sites e navegação entre páginas.`
@@ -63,7 +63,7 @@ export const listaProjetos = [
         titulo: "Agência de Design",
         gif: Design_g,
         img: Design_i,
-        link: "https://github.com/edgarfb17/Agencia-Design.git",
+        link: "https://agencia-design-kohl.vercel.app/",
         categorias: ["react", "todas"],
         descricao: `Projeto acadêmico que fiz usando React.JS, obtive experências como componentização e 
         variáveis de estado.` 
@@ -73,7 +73,7 @@ export const listaProjetos = [
         titulo: "Pousada Secreta",
         gif: Pousada_g,
         img: Pousada_i,
-        link: "https://github.com/edgarfb17/Pousada.git",
+        link: "https://pousada-ruddy.vercel.app/",
         categorias: ["html/css", "todas"],
         descricao: `Projeto acadêmico que fiz usando HTML e CSS, para consolidação de experiências 
         como layout responsivo e navegação entre páginas.`  
@@ -83,7 +83,7 @@ export const listaProjetos = [
         titulo: "Rocky",
         gif: Rocky_g,
         img: Rocky_i,
-        link: "https://github.com/edgarfb17/Projeto-Rocky.git",
+        link: "https://projeto-rocky.vercel.app/",
         categorias: ["html/css", "todas"],
         descricao: `Projeto que fiz para o processo seletivo, usando HTML e CSS,
          obtive experiências em animações de layout, design responsivo e formularios, 
@@ -94,7 +94,7 @@ export const listaProjetos = [
         titulo: "Agência de Viagens",
         gif: Viagens_g,
         img: Viagens_i,
-        link: "https://github.com/edgarfb17/Agencia-Viagens.git",
+        link: "https://projeto-agencia-de-viagens.vercel.app/",
         categorias: ["html/css", "todas"],
         descricao: `Projeto acadêmico que fiz usando HTML e CSS, para consolidação
          de experiências como Flex Box, formularios e postagem de sites.`
