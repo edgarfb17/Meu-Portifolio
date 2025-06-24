@@ -17,7 +17,6 @@
     gap: 50px;
     animation-name: AnimaMenu;
     animation-duration: 0.5s;
-    overflow: hidden;
     z-index: 3;
 }
 
@@ -105,6 +104,7 @@
         border-radius: 0 0 20px 20px;
         border: white solid 1px;
         font-size: 1.1rem;
+        overflow: hidden;
     }
 
     #menu_header ul li, #menu_header ul li:first-child{

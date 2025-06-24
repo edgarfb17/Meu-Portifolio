@@ -23,7 +23,7 @@ export const listaProjetos = [
         img: BarbaRussa_i,
         link: "https://barbearia-barba-russa.vercel.app/",
         categorias: ["html/css", "js", "todas"],
-        descricao: `Projeto freelancer que fiz, para a divulgação de uma barbearia
+        descricao: `Projeto Freelancer que fiz, para a divulgação de uma barbearia
         da minha cidade usando HTML, CSS e JS, uma boa experiência para consolidação
         de todos meus conhecimentos até o momento.`
     },
@@ -45,7 +45,7 @@ export const listaProjetos = [
         img: Restaurant_i,
         link: "https://cardapio-restaurant-self.vercel.app/",
         categorias: ["react", "todas"],
-        descricao: `Projeto acadêmico que fiz usando React.JS, obtive experências como componentização, 
+        descricao: `Projeto acadêmico que fiz usando React.JS, um cardápio de restaurante fictício, obtive experiências como componentização, 
         variáveis de estado e funções nativas.`
     },
 
@@ -65,7 +65,7 @@ export const listaProjetos = [
         img: Design_i,
         link: "https://agencia-design-kohl.vercel.app/",
         categorias: ["react", "todas"],
-        descricao: `Projeto acadêmico que fiz usando React.JS, obtive experências como componentização e 
+        descricao: `Projeto acadêmico que fiz usando React.JS, obtive experiências como componentização e 
         variáveis de estado.` 
     },
     
@@ -85,8 +85,8 @@ export const listaProjetos = [
         img: Rocky_i,
         link: "https://projeto-rocky.vercel.app/",
         categorias: ["html/css", "todas"],
-        descricao: `Projeto que fiz para o processo seletivo, usando HTML e CSS,
-         obtive experiências em animações de layout, design responsivo e formularios, 
+        descricao: `Projeto que fiz para um processo seletivo, usando HTML e CSS,
+         obtive experiências em animações de layout, design responsivo e formulários, 
          uma das minhas primeiras experiências relacionando HTML, CSS com JS.`
     },
 
@@ -97,6 +97,6 @@ export const listaProjetos = [
         link: "https://projeto-agencia-de-viagens.vercel.app/",
         categorias: ["html/css", "todas"],
         descricao: `Projeto acadêmico que fiz usando HTML e CSS, para consolidação
-         de experiências como Flex Box, formularios e postagem de sites.`
+         de experiências como Flex Box, formulários e postagem de sites.`
     },
 ]
