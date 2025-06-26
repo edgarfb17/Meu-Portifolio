@@ -5,7 +5,7 @@ import Image from  "next/image"
 export default function LeftBar(props){
     return(
         <div id={styles.container_left_bar}>
-            <Link id={styles.link_wpp} href="#">
+            <Link id={styles.link_wpp} href="https://wa.me/5515988231195">
             <Image src={props.wpp} alt="icone whatsapp"></Image>
             </Link>
 
