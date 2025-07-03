@@ -13,7 +13,7 @@ export default function Skills(){
                 <p>Design Responsivo</p>
                 <p>UML</p>
                 <p>Boas práticas</p>
-                <p>Metodologias Agéis</p>
+                <p>Metodologias Ágeis</p>
                 <p>POO</p>
                 <p>Trabalho em Equipe</p>
                 <p>Análise de Processos</p>
