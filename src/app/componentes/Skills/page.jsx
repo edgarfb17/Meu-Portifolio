@@ -16,6 +16,9 @@ export default function Skills(){
                 <p>Metodologias Agéis</p>
                 <p>POO</p>
                 <p>Trabalho em Equipe</p>
+                <p>Análise de Processos</p>
+                <p>Capacidade de Organização</p>
+                <p>Procedimentos de Testes</p>
             </div>
         </section>
     )

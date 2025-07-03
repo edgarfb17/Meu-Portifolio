@@ -53,7 +53,7 @@ export default function Home() {
 
           <div className="alinhamento-conteudo" id={styles.banner_txt}>
             <h1><MaquinaDeEscrever setSecondComponent={setSecondComponent} secondComponent={secondComponent} txtRecebido="Edgar Bataglini  "/></h1> 
-            <h2>{secondComponent && <MaquinaDeEscrever txtRecebido="Desenvolvedor Web"/>}</h2>
+            <h2>{secondComponent && <MaquinaDeEscrever txtRecebido="Desenvolvedor Front-End"/>}</h2>
           </div>
 
           <Image src={Banner} alt="imagem banner"></Image>
