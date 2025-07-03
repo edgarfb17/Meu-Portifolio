@@ -19,6 +19,7 @@ export default function Skills(){
                 <p>Análise de Processos</p>
                 <p>Capacidade de Organização</p>
                 <p>Procedimentos de Testes</p>
+                <p>Git</p>
             </div>
         </section>
     )
